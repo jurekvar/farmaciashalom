@@ -1,0 +1,94 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Farmacia Homeopática Shalom</title>
+        <script src="https://kit.fontawesome.com/f6e36ce158.js"></script>
+        <link rel="stylesheet" href="css/estilos2.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <a href="#" class="logo"><img class="logofarmacia" src="imagenes/logo_transparente.png" alt="Farmacia Homeopatica Shalom" ></a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="#" class="nav-links"><i class="fa fa-home" aria-hidden="true"></i> &nbspInicio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-links"><i class="fas fa-prescription-bottle-alt" aria-hidden="true"></i> &nbspProductos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-links"><i class="fa fa-user" aria-hidden="true"></i> &nbspNosotros</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-links"><i class="fa fa-envelope" aria-hidden="true"></i> &nbspContacto</a>
+                    </li>
+                </ul>
+                <a href="https://www.facebook.com/shalomhomeopatia/" class="social"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            </nav>
+        </header>
+   <!--  <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img class="slider" src="imagenes/img1.png" >
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img class="slider" src="imagenes/img2.png" >
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img class="slider" src="imagenes/img3.png" >
+        <div class="text">Caption Three</div>
+      </div>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script >
+                    
+            let mainNav = document.getElementById('js-menu');
+            let navBarToggle = document.getElementById('js-navbar-toggle');
+
+            navBarToggle.addEventListener('click', function () {
+              mainNav.classList.toggle('active');
+            });
+        </script>
+<!--          <script>
+          var slideIndex = 0;
+          showSlides();
+
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+          }
+          </script> -->
+    </body>
+    </html>
